@@ -418,7 +418,6 @@ pre::-webkit-scrollbar-thumb:horizontal {
   line-height: 2.1667;
   color: #d0d0d0;
   background-color: #272822;
-  border: 1px solid #dbdbdb;
   overflow: auto;
   -webkit-border-radius: 3px;
      -moz-border-radius: 3px;

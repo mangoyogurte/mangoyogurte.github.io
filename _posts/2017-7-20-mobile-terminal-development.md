@@ -83,10 +83,10 @@ share: true
 
         ```css
         @media screen and(max-device-width: 400px){
-    　　　　 .column {  
-    　　　　　　 float: none;  
-    　　　　　　 width:auto;  
-    　　　　 }  
+    　　　　.column {  
+    　　　　　　float: none;  
+    　　　　　　width:auto;  
+    　　　　}  
         }
         ```
 
