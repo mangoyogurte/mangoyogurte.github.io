@@ -29,7 +29,9 @@ share: true
 <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
 ```
 
-这行简单分析一下这一行代码的含义：width=device-width表示网页的宽度等于设备屏幕的宽度，initial-scale=1.0表示设置页面初始的缩放比例为1，user-scalable=no表示禁止用户进行缩放，maximum-scale=1.0 和 minimum-scale=1.0 表示设置最大的和最小的页面缩放比例。因为各大浏览器对meta标签的解析程度不一样，所以我们要尽可能的去兼容所有浏览器。
+<!--more-->
+
+简单分析一下这一行代码的含义：width=device-width表示网页的宽度等于设备屏幕的宽度，initial-scale=1.0表示设置页面初始的缩放比例为1，user-scalable=no表示禁止用户进行缩放，maximum-scale=1.0 和 minimum-scale=1.0 表示设置最大的和最小的页面缩放比例。因为各大浏览器对meta标签的解析程度不一样，所以我们要尽可能的去兼容所有浏览器。
 
 ### dPR（devicePixelRatio）
 
@@ -60,33 +62,33 @@ share: true
 
 - 百分比布局是最常用的自适应手段，大家都很熟悉，不再赘述。想要说说的是用Flex实现的百分比布局（即弹性布局），代码更加清晰简便。具体用法推荐这篇博客，
 
-[用Flex实现的百分比布局](http://blog.csdn.net/handsome_fan/article/details/70199238)
+    [用Flex实现的百分比布局](http://blog.csdn.net/handsome_fan/article/details/70199238)
 
 - Flex布局当然不只是用于百分比布局这么简单了，用于各种排版(垂直居中，斜线)的时候也是相当犀利。具体用法阮一峰老师的博客说的非常详细，
 
-[Flex 布局教程：实例篇](http://www.ruanyifeng.com/blog/2015/07/flex-examples.html)
+    [Flex 布局教程：实例篇](http://www.ruanyifeng.com/blog/2015/07/flex-examples.html)
 
 ## 接下来是响应式中常用且实用的技术
 
 - 目前一般常见的实现响应式有两种方法，一种是利用媒体查询，另外一种是bootstrap下的栅格布局。
 - 先说第一种，第一种有两个应用。
 
-1. 选择加载CSS，比如这种代码
+    1. 选择加载CSS，比如这种代码
 
-    ```html
-    <link rel="stylesheet" type="text/css" media="screen and (max-device-width: 400px)"  href="tinyScreen.css" />  
-    ```
+        ```html
+        <link rel="stylesheet" type="text/css" media="screen and (max-device-width: 400px)"  href="tinyScreen.css" />  
+        ```
 
-2. 同一个CSS文件中，比如这种代码
+    2. 同一个CSS文件中，比如这种代码
 
-    ```css
-    @media screen and(max-device-width: 400px){
-　　　　  .column {  
-　　　　　　  float: none;  
-　　　　　　  width:auto;  
-　　　　  }  
-    }
-    ```
+        ```css
+        @media screen and(max-device-width: 400px){
+    　　　　 .column {  
+    　　　　　　 float: none;  
+    　　　　　　 width:auto;  
+    　　　　 }  
+        }
+        ```
 
 - 至于后一种，笔者还没学习，以后再补充吧o(╥﹏╥)o。
 
